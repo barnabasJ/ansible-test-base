@@ -1,4 +1,4 @@
-FROM centos/systemd:latest
+FROM centos:6
 RUN yum install -y epel-release \
     && yum install -y python-devel python-pip openssl-devel libffi-devel gcc git sudo iproute initscripts
 RUN pip install --upgrade pip setuptools \
