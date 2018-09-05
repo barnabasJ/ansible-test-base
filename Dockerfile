@@ -10,5 +10,5 @@ RUN yum install -y epel-release \
       sudo \
       iproute \
       initscripts
-RUN pip install -U pip && pip install -U setuptools \
+RUN pip install -U setuptools \
     && pip install ansible testinfra pytest pytest-xdist pytest-gitignore apacheconfig
