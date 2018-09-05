@@ -1,5 +1,7 @@
 FROM centos:6
-RUN yum install -y epel-release \
+RUN yum makecache fast \
+    && yum -y install deltarpm epel-release \
+    && yum -y update \
     && yum install -y python-devel \
       python-pip \
       python-urllib3 \
