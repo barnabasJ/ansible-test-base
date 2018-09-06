@@ -1,6 +1,6 @@
 FROM centos:6
 
-RUN yum install centos-release-SCL \
+RUN yum -y install centos-release-SCL \
   && yum -y groupinstall development \
   && yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel
 
